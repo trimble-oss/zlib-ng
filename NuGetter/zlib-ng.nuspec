@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>zlib-ng</id>
+    <version>0.0.0-localbuild</version>
+    <authors>Jean-loup Gailly, Mark Adler and zlib-ng contributors</authors>
+    <projectUrl>https://github.com/trimble-oss/zlib-ng</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>zlib data compression library for the next generation systems. (Win32/x64, v140/v141->v140/v142, Release/DebugCRT builds by Trimble Technology).</description>
+    <title>zlib-ng</title>
+    <tags>zlib-ng  native</tags>
+  </metadata>
+  <files>
+    <file src="zlib-ng.targets" target="\build\native\" />
+
+    <file src="..\zconf.h" target="\build\native\include\" />
+    <file src="..\zlib.h" target="\build\native\include\" />
+
+    <file src="..\Build\Win32\140-Release\zlib-ng.lib" target="\build\native\lib\Win32\v140\" />
+    <file src="..\Build\x64\140-Release\zlib-ng.lib" target="\build\native\lib\x64\v140\" />
+    <file src="..\Build\Win32\142-Release\zlib-ng.lib" target="\build\native\lib\Win32\v142\" />
+    <file src="..\Build\x64\142-Release\zlib-ng.lib" target="\build\native\lib\x64\v142\" />
+
+    <file src="..\Build\Win32\140-DebugCRT\zlib-ng.lib" target="\build\native\lib\Win32\v140\DebugCRT\" />
+    <file src="..\Build\x64\140-DebugCRT\zlib-ng.lib" target="\build\native\lib\x64\v140\DebugCRT\" />
+    <file src="..\Build\Win32\142-DebugCRT\zlib-ng.lib" target="\build\native\lib\Win32\v142\DebugCRT\" />
+    <file src="..\Build\x64\142-DebugCRT\zlib-ng.lib" target="\build\native\lib\x64\v142\DebugCRT\" />
+  </files>
+</package>
