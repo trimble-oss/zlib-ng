@@ -9,4 +9,4 @@ set /p Build=<ver.txt
 set /a Build+=1
 echo %Build% >ver.txt
 
-c:\work\nuget.exe pack -Version 0.0.%Build%-test zlib-ng.nuspec
+c:\work\nuget.exe pack -Version 2.0.7-technology-%Build% zlib-ng.nuspec
